@@ -1,0 +1,375 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#050912" />
+  <title>OpenLens — Smart When You Want It</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <header class="navbar">
+    <a class="logo" href="#home">
+      <span class="logo-mark">◈</span> open<span>lens</span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+
+    <nav id="navLinks">
+      <a class="nav-link active" href="#home">Home</a>
+      <a class="nav-link" href="#shop">Shop</a>
+      <a class="nav-link" href="#features">Features</a>
+      <a class="nav-link" href="#assistant">AI Assistant</a>
+      <a class="nav-link" href="#analog">Analog Escape</a>
+      <a class="nav-link" href="#about">About</a>
+    </nav>
+
+    <div class="nav-actions">
+      <span class="status-pill" id="navStatus">
+        <span class="status-dot"></span>
+        <span id="statusText">AI MODE ACTIVE</span>
+      </span>
+      <a href="#assistant" class="button button-primary nav-cta">Explore Demo ↗</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span></span> OPEN-SOURCE SMART GLASSES</div>
+        <h1>See more.<br><span class="gradient-text">Do more.</span></h1>
+        <p class="hero-description">
+          Meet OpenLens: a privacy-first AI glasses concept designed for
+          real life, with a simple switch that puts you back in control.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#features">Explore Features <span>→</span></a>
+          <a class="button button-secondary" href="#assistant"><span class="play-icon">▶</span> Try Live Demo</a>
+        </div>
+
+        <div class="hero-trust">
+          <span><i class="mini-check">✓</i> Privacy first</span>
+          <span><i class="mini-check">✓</i> Open source</span>
+          <span><i class="mini-check">✓</i> Your choice</span>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-label="Animated smart glasses concept">
+        <div class="visual-orbit orbit-one"></div>
+        <div class="visual-orbit orbit-two"></div>
+        <div class="visual-glow"></div>
+
+        <div class="floating-label label-top">
+          <span class="label-icon">✧</span>
+          <div><strong>AI in your view</strong><small>Context when you need it</small></div>
+        </div>
+
+        <div class="glasses-stage" id="glassesStage">
+          <div class="glasses">
+            <div class="temple"></div>
+            <div class="lens lens-left">
+              <span class="lens-reflection"></span>
+              <span class="lens-camera"></span>
+            </div>
+            <div class="bridge"></div>
+            <div class="lens lens-right">
+              <span class="lens-reflection"></span>
+              <div class="lens-hud">
+                <span class="hud-time">10:24 <i>●</i></span>
+                <span class="hud-symbol">✧</span>
+                <span class="hud-message">Hey! What can<br> I help you with?</span>
+                <span class="hud-wave">∿ ∿ ∿ ∿ ∿</span>
+              </div>
+            </div>
+            <div class="nose-arm"></div>
+          </div>
+          <div class="stage-shadow"></div>
+        </div>
+
+        <div class="floating-label label-bottom">
+          <span class="pulse-dot"></span>
+          <div><strong id="heroModeLabel">AI mode is on</strong><small id="heroModeSub">Ready when you are</small></div>
+        </div>
+
+        <div class="side-note">
+          <span>01</span>
+          <div>Privacy in your hands.<br>Freedom in your choice.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature-strip section-wrap" id="features">
+      <article class="feature-card">
+        <div class="feature-icon icon-blue">✧</div>
+        <div class="feature-content">
+          <h3>AI Assistant</h3>
+          <p>Get answers, ideas and helpful suggestions whenever you need them.</p>
+          <span class="feature-status"><i></i> Interactive demo</span>
+        </div>
+        <a href="#assistant" class="feature-arrow" aria-label="Try AI Assistant">↗</a>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-icon icon-purple">◉</div>
+        <div class="feature-content">
+          <h3>Vision System</h3>
+          <p>Explore the idea of visual assistance and contextual information.</p>
+          <span class="feature-status purple-status"><i></i> Concept feature</span>
+        </div>
+        <a href="#vision" class="feature-arrow" aria-label="Explore vision system">↗</a>
+      </article>
+
+      <article class="feature-card" id="analog">
+        <div class="feature-icon icon-gold">⬡</div>
+        <div class="feature-content">
+          <h3>Analog Escape</h3>
+          <p>Switch off digital features and return to a distraction-free experience.</p>
+          <span class="feature-status gold-status"><i></i> Try the toggle</span>
+        </div>
+        <button class="feature-arrow" id="featureAnalog" aria-label="Toggle Analog Mode">↗</button>
+      </article>
+    </section>
+
+    <section class="showcase-grid section-wrap" id="vision">
+      <article class="vision-card glass-panel">
+        <div class="vision-background"></div>
+        <div class="vision-copy">
+          <span class="eyebrow">THE IDEA</span>
+          <h2>Your world,<br>with more context.</h2>
+          <p>Imagine useful information appearing when it matters, without taking you away from the world around you.</p>
+          <div class="vision-tags">
+            <span><b>◉</b> Visual assistance</span>
+            <span><b>⌁</b> Smart navigation</span>
+            <span><b>✧</b> Contextual AI</span>
+          </div>
+        </div>
+
+        <div class="ar-preview">
+          <div class="ar-chip navigation-chip">
+            <span>↗</span><div><strong>Turn right</strong><small>In 200 metres</small></div>
+          </div>
+          <div class="ar-chip weather-chip">
+            <span class="sun-symbol">☀</span><div><strong>24°</strong><small>Sample weather UI</small></div>
+          </div>
+        </div>
+        <span class="concept-stamp">CONCEPT PREVIEW</span>
+      </article>
+
+      <article class="assistant-card glass-panel" id="assistant">
+        <div class="assistant-header">
+          <div class="assistant-avatar">✧</div>
+          <div><h3>OpenLens AI</h3><p>Your personal assistant concept</p></div>
+          <span class="online-indicator"></span>
+        </div>
+
+        <div class="chat-body" id="chatBody" aria-live="polite">
+          <div class="chat-message assistant-message">
+            Hey there! 👋<br>
+            I'm your OpenLens demo assistant. Ask me a question to get started.
+          </div>
+          <div class="suggestion-row">
+            <button class="suggestion">Give me a study tip</button>
+            <button class="suggestion">What is OpenLens?</button>
+          </div>
+        </div>
+
+        <form class="chat-form" id="chatForm">
+          <input id="chatInput" type="text" placeholder="Ask me anything..." autocomplete="off" required />
+          <button type="submit" aria-label="Send message">↑</button>
+        </form>
+        <p class="demo-note" id="chatNote">Demo interface · Connect your AI backend for real answers</p>
+      </article>
+    </section>
+
+    <section class="analog-section section-wrap">
+      <div class="analog-copy">
+        <span class="eyebrow">YOUR ATTENTION. YOUR RULES.</span>
+        <h2>Technology should<br>know when to <span class="gradient-text">step back.</span></h2>
+        <p>Not every moment needs AI. OpenLens puts the choice in your hands, with a concept mode switch designed around digital freedom.</p>
+      </div>
+
+      <div class="analog-control glass-panel">
+        <div class="control-top">
+          <div class="control-icon">◈</div>
+          <div><h3>Analog Escape</h3><p>Choose your experience</p></div>
+        </div>
+
+        <div class="mode-options">
+          <button class="mode-option selected" id="aiModeButton">
+            <span>✧</span><div><strong>AI Mode</strong><small>Smart features enabled</small></div><i>●</i>
+          </button>
+          <button class="mode-option" id="analogModeButton">
+            <span>◯</span><div><strong>Analog Mode</strong><small>Digital features off in this demo</small></div><i>○</i>
+          </button>
+        </div>
+        <p class="mode-feedback" id="modeFeedback">You're in AI Mode. Explore the concept.</p>
+      </div>
+    </section>
+
+
+<section class="shop-section section-wrap" id="shop">
+  <div class="shop-heading">
+    <span class="eyebrow">MEET YOUR NEXT EVERYDAY ESSENTIAL</span>
+    <h2>Goodbye ordinary.<br><span class="gradient-text">Hello OpenLens.</span></h2>
+    <p>Explore the smart glasses concept built around your freedom to choose.</p>
+  </div>
+
+  <div class="shop-card glass-panel">
+    <div class="shop-visual">
+      <span class="shop-badge">CONCEPT EDITION</span>
+
+      <div class="shop-glasses">
+        <div class="shop-temple"></div>
+        <div class="shop-lens shop-lens-left"></div>
+        <div class="shop-bridge"></div>
+        <div class="shop-lens shop-lens-right">
+          <span class="shop-lens-glow"></span>
+        </div>
+      </div>
+
+      <span class="shop-visual-caption">OPENLENS · SERIES 01</span>
+    </div>
+
+    <div class="shop-details">
+      <span class="product-category">OPENLENS COLLECTION</span>
+      <h3>OpenLens One</h3>
+      <p class="product-description">
+        Minimal design. AI-inspired features. Your choice to disconnect.
+      </p>
+
+      <div class="product-rating">
+        <span>★★★★★</span>
+        <small>Concept product preview</small>
+      </div>
+
+      <div class="product-price">
+        <strong>₹4,999</strong>
+        <span>Demo price</span>
+      </div>
+
+      <p class="option-label">FRAME COLOUR</p>
+      <div class="color-options">
+        <button class="color-option selected" data-color="Midnight Black"
+          aria-label="Midnight Black" title="Midnight Black">
+          <span style="background:#171b24"></span>
+        </button>
+        <button class="color-option" data-color="Silver Frost"
+          aria-label="Silver Frost" title="Silver Frost">
+          <span style="background:#b9c4d5"></span>
+        </button>
+        <button class="color-option" data-color="Ocean Blue"
+          aria-label="Ocean Blue" title="Ocean Blue">
+          <span style="background:#426dc3"></span>
+        </button>
+      </div>
+      <p class="selected-colour" id="selectedColour">Midnight Black</p>
+
+      <div class="purchase-row">
+        <div class="quantity-control">
+          <button type="button" id="quantityMinus" aria-label="Decrease quantity">−</button>
+          <span id="quantityValue">1</span>
+          <button type="button" id="quantityPlus" aria-label="Increase quantity">+</button>
+        </div>
+        <button class="button button-primary buy-button" id="buyNow">
+          Buy Now <span>→</span>
+        </button>
+      </div>
+
+      <button class="cart-button" id="addToCart">＋ Add to bag</button>
+
+      <div class="shop-benefits">
+        <span>◇ Concept product</span>
+        <span>⌁ Secure checkout not connected</span>
+      </div>
+
+  </div>
+
+  <div class="bag-bar" id="bagBar" hidden>
+    <div>
+      <strong>Added to your demo bag</strong>
+      <p id="bagSummary">OpenLens One · 1 item</p>
+    </div>
+    <button class="button button-primary" id="viewBag">View bag →</button>
+  </div>
+</section>
+
+<div class="checkout-overlay" id="checkoutOverlay" hidden>
+  <section class="checkout-modal" role="dialog"
+    aria-modal="true" aria-labelledby="checkoutTitle">
+    <button class="checkout-close" id="closeCheckout"
+      aria-label="Close checkout">×</button>
+
+    <span class="eyebrow">OPENLENS STORE</span>
+    <h2 id="checkoutTitle">Your order preview</h2>
+    <p class="checkout-intro">
+      Review your selection. This demo does not process payments or submit orders.
+    </p>
+
+    <div class="checkout-product">
+      <div class="checkout-product-icon">◈</div>
+      <div class="checkout-product-info">
+        <strong>OpenLens One</strong>
+        <span id="checkoutVariant">Midnight Black · Qty 1</span>
+      </div>
+      <strong id="checkoutPrice">₹4,999</strong>
+    </div>
+
+    <div class="checkout-total">
+      <span>Subtotal</span>
+      <strong id="checkoutSubtotal">₹4,999</strong>
+    </div>
+    <div class="checkout-total muted-total">
+      <span>Shipping</span>
+      <span>Calculated when available</span>
+    </div>
+    <div class="checkout-total grand-total">
+      <span>Total estimate</span>
+      <strong id="checkoutTotal">₹4,999</strong>
+    </div>
+
+    <form id="demoOrderForm">
+      <label for="buyerName">Your name</label>
+      <input id="buyerName" name="buyerName"
+        placeholder="Enter your name" required maxlength="80" />
+
+      <label for="buyerEmail">Email address</label>
+      <input id="buyerEmail" name="buyerEmail" type="email"
+        placeholder="you@example.com" required maxlength="254" />
+
+      <button type="submit" class="button button-primary checkout-submit">
+        Review demo order →
+      </button>
+    </form>
+
+    <p class="checkout-notice" id="checkoutNotice" aria-live="polite">
+      No payment will be collected. Your details are not sent anywhere.
+    </p>
+  </section>
+</div>
+
+
+    <section class="closing section-wrap" id="about">
+      <div class="closing-symbol">◈</div>
+      <span class="eyebrow">THE OPENLENS IDEA</span>
+      <h2>Smart when you want it.<br><span class="gradient-text">Analog when you don't.</span></h2>
+      <p>Open-source thinking. Privacy-first design. Technology on your terms.</p>
+      <a href="#home" class="button button-secondary">Back to top ↑</a>
+    </section>
+  </main>
+
+  <footer class="footer section-wrap">
+    <a class="logo" href="#home"><span class="logo-mark">◈</span> open<span>lens</span></a>
+    <p>Designed for people, not distractions.</p>
+    <span>© 2026 OpenLens Concept</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
